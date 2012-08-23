@@ -1,0 +1,16 @@
+class Blibros{
+	String nombrepre;
+	String autor;	
+	String nombrelibro;
+	String tema;
+	String fechasali;
+	String fechaentra;
+Blibros( String _nombrepre, String _autor, String _nombrelibro, String _tema, String _fechasali, String _fechaentra ){
+	nombrepre= _nombrepre;
+	autor= _autor;
+	nombrelibro= _nombrelibro;
+	tema= _tema;
+	fechasali= _fechasali;
+	fechaentra= _fechaentra;
+		}
+} 

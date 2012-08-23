@@ -1,0 +1,166 @@
+public class imc{
+	public static void main(String[] args) {
+	double e;              
+    double a;        
+    double b;
+    double c;
+    double d;
+    double f;
+    double g; 
+    double h;
+    double q;
+    double j;
+    double k;
+    double l;
+    double n;
+    double o;
+    double p;
+    double r;
+    double s;
+    double t;
+    double u;
+    double y;
+	
+	System.out.println("bienvenidos al programa imc");   
+   	System.out.println("");  
+	System.out.println("");  
+	System.out.println("Escriba su nombre");  
+	String nombre= System.console().readLine();
+	System.out.println(""); 
+	System.out.println(" digite su peso "); 
+	double peso =Double.parseDouble(System.console().readLine());
+	System.out.println(" digite su estatura"); 
+	double estatura =Double.parseDouble(System.console().readLine());
+
+	e=(peso/(estatura*estatura));
+	System.out.println(""); 
+	System.out.println("resultado de promedio imc");  
+	System.out.println(e);
+	System.out.println(""); 
+	System.out.println(""); 
+	
+	
+	k=7700;
+	if (e<16.00) {
+		a=25.00-e;
+		System.out.println(nombre);
+		System.out.println(" tienes delgadez severa");
+        System.out.println("para alcansar tu peso normal te falta");
+		System.out.println(a);
+		l=k*a;
+		System.out.println(" estas calorias te hacen falta");
+        System.out.println(l);
+    }
+	if (e>=16.00&&e<=16.99) {
+        b=25.00-e;                    
+		System.out.println(nombre);
+		System.out.println(" tienes delgadez moderada");
+        System.out.println("para alcansar tu peso normal te falta");
+		System.out.println(b);
+	    n=k*b;
+		System.out.println(" estas calorias te hacen falta");
+        System.out.println(n);
+    }
+	
+	if (e>=17.00&&e<=18.98) {
+		c=25.00-e;  
+        System.out.println(nombre);
+		System.out.println("tienes delgadez no muy pronunciada");
+        System.out.println("te falta");
+		System.out.println();
+		o=(k*c);
+		System.out.println("te falta");
+        System.out.println();
+	
+    }
+	if (e>=18.99&&e<=24.99) {
+		System.out.println(nombre);
+		System.out.println("eres normal");
+        System.out.println("Asi que no te falta, ni sobran kg");
+		System.out.println("te falta = 0 calorias ");
+       	
+    }
+        
+    if (e>=25.00&&e<=25.01) {
+		System.out.println(nombre);
+		System.out.println("tienes sobrepeso");
+        d=e-25.00;
+		System.out.println(" valla tienes que bajar apenas");
+		System.out.println(d);
+		System.out.println("kg para un promedio normal");
+		p=k*d;
+		System.out.println("te sobra");
+        System.out.println(p);
+		System.out.println("calorias");
+		
+    }
+	if (e>=25.01&&e<=29.99) {
+		System.out.println(nombre);
+		System.out.println("eres preobeso");
+        f=e-25.00;
+		System.out.println(" tienes que bajar ");
+		System.out.println(f);
+		System.out.println("kg para un promedio normal");
+		y=k*f;
+		System.out.println("te sobra");
+        System.out.println(y);
+		System.out.println("calorias");		
+	}
+	if (e>=30.00&&e<=30.01) {  
+		System.out.println(nombre);
+		System.out.println("eres obeso");
+        g=(e-25.00); 
+		System.out.println("tienes que bajar ");
+		System.out.println(g);
+		System.out.println("kg para un promedio normal");
+		r=k*g;
+		System.out.println("te sobra");
+        System.out.println(r);
+		System.out.println("calorias");
+	}
+	if (e>=30.01&&e<=34.99) {
+		System.out.println(nombre);
+		System.out.println("eres obeso tipo I");
+		h=(e-25.00); 
+		System.out.println(" tienes que bajar ");
+		System.out.println(h);
+		System.out.println("kg para un promedio normal");
+		s=k*h;
+		System.out.println("te sobra");
+        System.out.println(s);
+		System.out.println("calorias");
+	}
+	if (e>=35.00&&e<=39.99) {
+		System.out.println(nombre);
+		System.out.println("eres obeso tipo II");
+		q=(e-25.00); 
+		System.out.println("valla que estas gordo tienes que bajar ");
+		System.out.println(q);
+		System.out.println("kg para un promedio normal");
+		t=k*q;
+		System.out.println("te sobra");
+        System.out.println(t);
+		System.out.println("calorias");
+		
+	}
+	if (e>=40.00) {
+		System.out.println(nombre);
+		System.out.println("eres obeso tipo III");
+		j=(e-25.00);  
+		System.out.println("estas extremadamente gordo tienes que bajar");
+		System.out.println(j);
+		System.out.println("kg para un promedio normal");
+		u=k*j;
+		System.out.println("te sobra");
+        System.out.println(u);
+		System.out.println("calorias");
+	}
+		System.out.println("");
+		System.out.println("");
+    }
+} 
+    
+	 
+
+
+

@@ -1,0 +1,34 @@
+class Biblioteca{
+String numelibro;
+String bloque;
+String secion;
+String color;
+String librosprestados;
+String nomlibro;
+Blibros [] librosprestados;
+
+Biblioteca( String _numelibro, String _bloque, String _secion, String _color, String _nomlibro, String _librosprestados, Blibros [] librosprestados){
+numelibro=_numelibro;
+bloque=_bloque;
+secion=_secion;
+color=_color;
+librosprestados=_librosprestados;
+}
+void imprimirLibrosprest () {
+	System.out.println("libros prestados");    
+	System.out.println(numelibro+nomlibro); 
+for(int i=0; i < librosprestados.Length; i ++) {
+Blibros temporal= librosprestados[i];
+System.out.PrintIn (temporal.nombrepre+temporal.autor+temporal.nombrelibro+temporal.tema+temporal.fechasali+temporal.fechaentra);
+	}
+}
+	
+public static void main ( String [] args) {
+Blibros[] libros= new Blibros[5];
+libros[0]= new Blibros ( "Carlos Medina "," Autor: Andrea Káterin","Titulo: Miradas"," Tema: suspenso","Fecha de egreso: 12/20/2011 ","Fecha de ingreso: 12/23/2011");
+libros[1]= new Blibros ( "Andres Carvajal","Autor: Julia Quinn "," Titulo: El duque y yo ","Tema: romance "," Fecha de egreso: 03/07/2010 "," Fecha de ingreso: 03/10/2010");
+libros[2]= new Blibros ( "Santiago Cruz ","   Autor: carlos vites","Titilo: Avanzando  "," Tema: Informativo"," Fecha de egreso:09/14/2011 ","Fecha de ingreso: 09/17/2011");
+libros[3]= new Blibros ( "Carolina Salcedo","  Autor: sonia Urrutia "," Titulo: despertando   "," Tema: informativo" ," Fecha de egreso 03/12/2011 ","Fecha ingreso   03/15/2011");
+libros[4]= new Blibros ( "Juan Cartagena ","  Autor;  linda howard "," Titulo: hombre perfecto  "," Tema: romance ","  Fecha de egreso 08/05/2010 ","Fecha ingreso   08/08/2010");
+}
+Biblioteca Andrea = new Biblioteca (" Prestado a: Carlos Medina "," Bloque:A1", "Seccion: Suspenso", "Color: Azul"," Nombre del libro: Miradas"); 

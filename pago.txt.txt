@@ -1,0 +1,37 @@
+ class PagoSemanal{
+ public static void main(String [] args ){
+	int horas;
+	double pago;
+	String nombre;
+	double pagobase;
+	int extraordinarias=0;
+ 
+	System.out.println("PROGRAMA MINI-NOMINA");
+	System.out.println("Ingrese su nombre");
+	nombre=System.console().readLine();
+	System.out.println("Ingrese pago basico");
+	pagobase=Double.parseDouble(System.console().readLine());
+    
+	
+	if (pagobase < 8){
+    System.out.println("su pago pago no debe ser menor que 8");
+	}	else {
+	System.out.println("");
+	System.out.println("Ingrese el numero de horas trabajadas esta semana");
+	horas=Integer.parseInt(System.console().readLine());
+	if (horas<60){
+	System.out.println(" trabaje mas ");
+	}if (horas > 40) {
+
+     extraordinarias= horas - 40;  
+    }
+     pago = pagobase * horas;
+     pago+= extraordinarias * pagobase * 1.5;
+     System.out.println("el pago del empleado es  $" + pago);  
+	
+	}
+	
+} 
+    
+}
+ 
